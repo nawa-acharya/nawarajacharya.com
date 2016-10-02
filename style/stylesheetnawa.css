@@ -14,7 +14,7 @@
       background-repeat: no-repeat;
   }
   .bg-2 {
-      background-color: #f2f2f2; 
+      background-color: #e6eeff; 
       color: #ffffff;
       padding-bottom: 30px;
   }
@@ -30,11 +30,19 @@
       background-color: #F8F8F8;
       color: #000000;
   }
+.bg-5 {
+    background-color: #d9d9d9;
+	position: fixed;
+    color: #00001a;
+    padding: 10px;
+	right: 15px;
+	bottom: 15px;
+}
   .container-fluid {
-      color: #00cccc;
-      padding-top: 20px;
-/*      padding-bottom: 30px;*/
-      margin-left: 45px;
+    color: #00cccc;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 45px;
   }
 /*  .navbar {
       padding-top: 10px;
@@ -150,13 +158,15 @@ blockquote {
     right: 0px;
     width: 60px;
     height: 60px;
-/*    border-radius: 50%;
-    border: 1px solid #3366ff;*/
-    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #00cccc;
     font-size: 25px;
-    color: #000000;
-/*    background-color:  #3366ff;*/
-   /* display: block;*/
+    vertical-align:middle;
+    text-align:center;
+    color: #ffffff;
+    background-color: #00cccc;
+    line-height:55px; 
+    display: block;
     z-index: 1;
 }
 .skillSet {

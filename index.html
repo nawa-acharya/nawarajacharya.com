@@ -10,11 +10,11 @@
         <link rel="stylesheet" href="style/circle.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery.ui.all.css">
     </head>
     <body  data-spy="scroll" data-target="#myNavbar" data-offset="70">
      <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top autohide">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -26,7 +26,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right" id="navtext">
-            <li><a href="#home" class="easing"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+            <li><a href="#home"><span class="glyphicon glyphicon-home"></span>Home</a></li>
             <li><a href="#educate"><span class="glyphicon glyphicon-education"></span>Education</a></li> 
             <li><a href="#skills"><span class="glyphicon glyphicon-briefcase"></span>Skills</a></li>
             <li><a href="#projects"><span class="glyphicon glyphicon-picture"></span>Projects</a></li>
@@ -96,21 +96,22 @@
     </div>
 
 <!-- career note -->
-    <div class="container-fluid bg-4">
-        <div class="col-md-11 col-md-offset-1 text-justify">
-            <h2>Career Note</h2>
-            <p class="bg-info">Completed on-campus study and currently taking distance education courses to complete a <strong>Master's Degree in Computer Science</strong>&nbsp;(Available for full-time, W2 employment).</p>
+    <div class="container-fluid col-md-offset-1">
+        <div class="col-md-11 text-justify">
+            <h1 class="text-center" id="careerNote">Career Note</h1>
+            <h3 class="text-info">Completed on-campus study and currently taking distance education courses to complete a <strong>Master's Degree in Computer Science</strong>&nbsp;(Available for full-time, W2 employment).</h3>
         </div>
     </div>
 
 <!-- education container -->
-    <div class="container-fluid bg-3 text-center  col-md-offset-1 " id="educate">
+    <div class="container-fluid bg-3 text-center" id="educate">
         <h1 class="margin" id="educationHeader"><span class="glyphicon glyphicon-education"></span> Education</h1>
-            <div class="col-xs-12 text-justify">
+            <div class="col-md-offset-1 col-md-10 text-justify">
                 <div class="innerContent education">
                     <h3 class="heading-underline"><span class="glyphicon glyphicon-check"></span> Masters in Computer Science</h3>
                     <blockquote class="blockquote-box clearfix">
-                        <p><strong>Univerisity: </strong>Maharishi University of Management <span style="color:#888888"> -Fairfield, IA, USA</span></p>                        
+                        <p><strong>Univerisity: </strong>Maharishi University of Management <span style="color:#888888"> -Fairfield, IA, USA</span></p> 
+						<p><strong>Graduation Date:</strong>&nbsp;2014</p>
                         <p><strong>Courses: </strong></p>
                         <ol type="1">
                             <li>Fundamental Programming Practices</li>
@@ -123,7 +124,8 @@
                     </blockquote>
                     <h3 class="heading-underline"><span class="glyphicon glyphicon-check"></span> Bachelors in Electronics and Communication Engineering</h3>
                      <blockquote class="blockquote-box clearfix">
-                        <p><strong>Univerisity: </strong>Kantipur Engineering College (Tribhuwan University)<span style="color:#888888"> -Dhapakhel, Lalitpur, Nepal</span></p>                        
+                        <p><strong>Univerisity: </strong>Kantipur Engineering College (Tribhuwan University)<span style="color:#888888"> -Dhapakhel, Lalitpur, Nepal</span></p>  
+						 <p><strong>Graduation Date:</strong>&nbsp;2018</p>
                         <p><strong>Key Courses: </strong></p>
                          <ol type="1">
                              <li>C Programming</li>
@@ -147,6 +149,7 @@
                     <blockquote class="blockquote-box clearfix">
                         <p><strong>School: </strong>Balodaya Higher Secondary School<span style="color:#888888"> -Pokhara, Nepal</span></p>
                         <p><strong>Awards: </strong></p>
+						<p><strong>Graduation Date:</strong>&nbsp;2008</p>
                         <ol type="1">
                             <li>Outstanding Performance Award 2008</li>
                         </ol>
@@ -157,9 +160,9 @@
     </div>
 
 <!-- Skills Container -->
-    <div class="container-fluid bg-4" id="skills">
+    <div class="container-fluid" id="skills">
         <h1 class="margin text-center" style="color: #0099cc">Skills</h1>
-        <div class="col-lg-11 col-lg-offset-1">
+        <div class="col-md-11 col-md-offset-1">
             <div class="row skillSet col-xs-12">
                             <!--Java-->
                 <div class="col-xs-2">
@@ -293,7 +296,7 @@
     </div>
         
 <!-- projects Container -->
-    <div class="container-fluid col-md-offset-1 bg-4" id="projects">
+    <div class="container-fluid col-md-offset-1" id="projects">
       <h3 class="margin text-center">Projects</h3>
         <div class="row innerContent text-justify">
 			<!-- Pathshala Nepal -->
@@ -500,10 +503,10 @@
 			</div>
 			<div id="contactForm">
 				<div class="test-justify">
-				   <form class="form-inline col-xs-12">
+				   <form class="form-inline col-xs-12" id="emailForm">
 						<div class="form-group">
 							<label class="sr-only" for="name">Name: </label>
-							<input type="text" class="form-control" id="name" placeholder="Your Name" size="30">
+							<input type="text" class="form-control" id="name" placeholder="Your Name" size="30" required>
 						</div>
 						<div class="form-group">
 							<label class="sr-only" for="email">&emsp;Email:</label>
@@ -513,11 +516,12 @@
 					   <br/>
 					   <div class="form-group">
 							<label class="sr-only" for="message">Comment:</label>
-							<textarea class="form-control" rows="8" cols="70" id="message" placeholder="Your Message to me" width="50px"></textarea> 
+							<textarea class="form-control" rows="8" cols="70" id="message" placeholder="Your Message to me" width="50px" required></textarea> 
 					   </div>
 					   <br/>
 					   <br/>
-					<button type="submit" class="btn btn-default">Send</button>
+				  <!-- <a type="button" class="btn btn-default" id="sendMailToMe">Send Me Your Message</a>-->
+				<input type="submit" class="btn btn-default" id="sendMailToMe" value="Send Email" />
 				</form>
 			</div>
 			</div>
@@ -533,6 +537,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="script/myscript.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </body>
 </html>

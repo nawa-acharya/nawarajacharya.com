@@ -1,542 +1,723 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="style/stylesheetnawa.css" />
-        <link rel="shortcut icon" href="image/link.gif">
-        <link rel="stylesheet" href="styles/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style/animations.css">
-        <link rel="stylesheet" href="style/circle.css">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery.ui.all.css">
-    </head>
-    <body  data-spy="scroll" data-target="#myNavbar" data-offset="70">
-     <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <span class="animated" id="dispname">Nawa Acharya</span>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right" id="navtext">
-            <li><a href="#home"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-            <li><a href="#educate"><span class="glyphicon glyphicon-education"></span>Education</a></li> 
-            <li><a href="#skills"><span class="glyphicon glyphicon-briefcase"></span>Skills</a></li>
-            <li><a href="#projects"><span class="glyphicon glyphicon-picture"></span>Projects</a></li>
-            <li><a href="#location"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-<!-- first container -->
-        <div class="bg-1">
-            <div class="container-fluid bg-1 text-center" id="home">
-                <div class="myHome">
-                    <h1 id="myname">Nawa Raj Acharya</h1>
-                    <h2>Java Developer</h2><br/>
-                    <a href="#home"><button class="mybtn">Learn More</button></a>&emsp;
-                    <span class="glyphicon glyphicon-menu-down" id="dpointer"></span>&emsp;
-                    <a href="#skills"><button class="mybtn">My Skills</button></a>
-                </div>
-            </div>
-        </div>
-<!--intro part -->
-    <div class="container-fluid bg-2">
-        <div class="col-md-4 col-md-offset-1 text-justify">
-            <h2>My Story</h2>
-            <p class="innerContent text-justify">I am Java/JEE developer with 4 years of professional experience designing web and enterprise applications on education, tourism and hotel business domain with involvement on end-to-end software development. Proficient code analyst, troubleshooter and problem solver who keenly identifies software issues and bugs to ensure optimal functionality. Developed several enterprise and web applications using frameworks and design patterns while implementing RESTful web services successfully. Well versed with Back end, Middle tier, front end and UI Development. Expertise in implementing Object oriented analysis and design and avid follower of SOLID principles. Enthusiastic in fulfilling commitments, keen to learning and ability to integrate into a team seamlessly. Good communication and proven success to deliver the tasks in time. </p>
-            <button class="btn btn-info"><span class="glyphicon glyphicon-download" style="font-size: 15px; color:#001a66"></span> &nbsp;
-            Download Resume</button>
-        </div>  
-        <div class="col-md-4" id="myImage">
-            <img class="img-responsive img-thumbnail" src="image/me.jpg" alt="Nawa" />
-        </div>
-        <div class="col-md-3 text-justify">
-            <h2>Personal Information</h2>
-            <br/>
-            <div>
-                <h4 class="personalInfo">Phone: &emsp;&emsp;<span>+1(641)225-5070</span></h4>
-                <hr/>
-                <h4 class="personalInfo">Email: &emsp;&emsp;&nbsp;<span>nawa.acharya04@gmail.com</span></h4>
-                <hr/>
-                <h4 class="personalInfo">Address: &emsp;<span>FairField, IA, 52557</span></h4>
-                <hr/>
-                <ul class="list-inline" id="social">
-                    <li>
-                        <a title="Facebook" href="https://np.linkedin.com/in/nawa-acharya" target="_blank"> 
-                            <i class="fa fa-linkedin-square" style="font-size:40px; color: #00b3b3"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a title="Linkedin" href="https://www.facebook.com/devillnawa" target="_blank">
-                            <i class="fa fa-facebook-square" style="font-size:40px; color: #00b3b3"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a title="Instagram" href="https://www.instagram.com/nawa_acharya/" target="_blank">
-                            <i class="fa fa-instagram" style="font-size:40px; color: #00b3b3"></i>
-                        </a> 
-                    </li>
-                    <li>
-                        <a title="GitHub" target="_blank" href="https://github.com/nawa-acharya">
-                            <i class="	fa fa-github" style="font-size:40px; color: #00b3b3"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-<!-- career note -->
-    <div class="container-fluid col-md-offset-1">
-        <div class="col-md-11 text-justify">
-            <h1 class="text-center" id="careerNote">Career Note</h1>
-            <h3 class="text-info">Completed on-campus study and currently taking distance education courses to complete a <strong>Master's Degree in Computer Science</strong>&nbsp;(Available for full-time, W2 employment).</h3>
-        </div>
-    </div>
-
-<!-- education container -->
-		<div class="container-fluid bg-3 text-center" id="educate">
-			<h1 class="margin" id="educationHeader"><span class="glyphicon glyphicon-education"></span> Education</h1>
-				<div class="col-md-offset-1 col-md-10 text-justify">
-					<div class="innerContent education">
-						<h3 class="heading-underline"><span class="glyphicon glyphicon-check"></span> Masters in Computer Science</h3>
-						<blockquote class="blockquote-box clearfix">
-							<p><strong>Univerisity: </strong>Maharishi University of Management <span style="color:#888888"> -Fairfield, IA, USA</span></p> 
-							<p><strong>Graduation Date:</strong>&nbsp;2014</p>
-							<p><strong>Courses: </strong></p>
-							<ol type="1">
-								<li>Fundamental Programming Practices</li>
-								<li>Modern Programming Practices</li>
-								<li>Algorithms</li>
-								<li>Web Application Programming</li>
-								<li>Enterprise Applications</li>
-								<li>Web Application Architecture</li>
-							</ol>
-						</blockquote>
-						<h3 class="heading-underline"><span class="glyphicon glyphicon-check"></span> Bachelors in Electronics and Communication Engineering</h3>
-						 <blockquote class="blockquote-box clearfix">
-							<p><strong>Univerisity: </strong>Kantipur Engineering College (Tribhuwan University)<span style="color:#888888"> -Dhapakhel, Lalitpur, Nepal</span></p>  
-							 <p><strong>Graduation Date:</strong>&nbsp;2018</p>
-							<p><strong>Key Courses: </strong></p>
-							 <ol type="1">
-								 <li>C Programming</li>
-								 <li>Object Oriented Programming</li>
-								 <li>Computer Network</li>
-								 <li>Analog/Digital Communication</li>
-								 <li>Computer Graphics</li>
-								 <li>Telecommunication</li>
-								 <li>Digital Signal Processing</li>
-								 <li>Engineering Mathematics</li>
-							 </ol>
-							 <p><strong>Awards: </strong></p>
-							 <ol type="i">
-								<li>The Laurel of the College 2013</li>
-								 <li>Third Postion in Tribhuvan Univeristy</li>
-	<!--                             <li>First Position in Kantipur Engineering College</li>-->
-								 <li>Best Project awarded by Nepal Telecom Authority</li>
-							 </ol>
-						</blockquote>
-						<h3 class="heading-underline"><span class="glyphicon glyphicon-check"></span> School</h3>
-						<blockquote class="blockquote-box clearfix">
-							<p><strong>School: </strong>Balodaya Higher Secondary School<span style="color:#888888"> -Pokhara, Nepal</span></p>
-							<p><strong>Awards: </strong></p>
-							<p><strong>Graduation Date:</strong>&nbsp;2008</p>
-							<ol type="1">
-								<li>Outstanding Performance Award 2008</li>
-							</ol>
-						</blockquote>
-
-					</div>
-				</div>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style/stylesheetnawa.css" />
+<link rel="shortcut icon" href="image/link.gif">
+<link rel="stylesheet" href="styles/css/bootstrap.min.css">
+<link rel="stylesheet" href="style/animations.css">
+<link rel="stylesheet" href="style/circle.css">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery.ui.all.css">
+</head>
+<body data-spy="scroll" data-target="#myNavbar" data-offset="70">
+	<div id="loader"></div>
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<span class="nav navbar-nav animated" id="dispname">Nawa
+					Acharya</span>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right" id="navtext">
+					<li><a href="#home"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+					<li><a href="#educate"><span
+							class="glyphicon glyphicon-education"></span>Education</a></li>
+					<li><a href="#skills"><span
+							class="glyphicon glyphicon-briefcase"></span>Skills</a></li>
+					<li><a href="#projects"><span
+							class="glyphicon glyphicon-picture"></span>Projects</a></li>
+					<li><a href="#location"><span
+							class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+				</ul>
+			</div>
 		</div>
+	</nav>
+	<!-- first container -->
+	<div class="bg-1">
+		<div class="container-fluid bg-1 text-center" id="home">
+			<div class="myHome">
+				<h1 id="myname">Nawa Raj Acharya</h1>
+				<h2>Java Developer</h2>
+				<br /> <a href="#home"><button class="mybtn">Learn
+						More</button></a>&emsp; <span class="glyphicon glyphicon-menu-down"
+					id="dpointer"></span>&emsp; <a href="#skills"><button
+						class="mybtn">My Skills</button></a>
+			</div>
+		</div>
+	</div>
+	<!--intro part -->
+	<div class="container-fluid bg-2">
+		<div class="col-md-3 col-md-offset-1 text-justify">
+			<h2>My Story</h2>
+			<p class="innerContent text-justify">Java/JEE developer with 4
+				years of professional experience designing web and enterprise
+				applications on education, tourism and hotel business domain with
+				involvement on end-to-end software development. Proficient code
+				analyst, troubleshooter and problem solver who keenly identifies
+				software issues and bugs to ensure optimal functionality. Developed
+				applications using frameworks and design patterns while implementing
+				RESTful web services successfully. Well versed with Back end, Middle
+				tier, front end and UI Development. Expertise in implementing Object
+				oriented analysis and design and avid follower of SOLID principles.
+				Enthusiastic in fulfilling commitments, keen to learning and ability
+				to integrate into a team seamlessly.</p>
+			<button class="btn btn-info">
+				<span class="glyphicon glyphicon-download"
+					style="font-size: 15px; color: #001a66"></span> &nbsp; Download
+				Resume
+			</button>
+		</div>
+		<div class="col-md-4" id="myImage">
+			<img class="img-responsive img-thumbnail" src="image/me.jpg"
+				alt="Nawa" />
+		</div>
+		<div class="col-md-3 text-justify">
+			<h2>Personal Information</h2>
+			<br />
+			<div>
+				<h4 class="personalInfo">
+					Phone: &emsp;&emsp;<span>+1(641)225-5070</span>
+				</h4>
+				<hr />
+				<h4 class="personalInfo">
+					Email: &emsp;&emsp;&nbsp;<span>nawa.acharya04@gmail.com</span>
+				</h4>
+				<hr />
+				<h4 class="personalInfo">
+					Address: &emsp;<span>FairField, IA, 52557</span>
+				</h4>
+				<hr />
+				<ul class="list-inline" id="social">
+					<li><a title="Facebook"
+						href="https://np.linkedin.com/in/nawa-acharya" target="_blank">
+							<i class="fa fa-linkedin-square"
+							style="font-size: 40px; color: #00b3b3"></i>
+					</a></li>
+					<li><a title="Linkedin"
+						href="https://www.facebook.com/devillnawa" target="_blank"> <i
+							class="fa fa-facebook-square"
+							style="font-size: 40px; color: #00b3b3"></i>
+					</a></li>
+					<li><a title="Instagram"
+						href="https://www.instagram.com/nawa_acharya/" target="_blank">
+							<i class="fa fa-instagram"
+							style="font-size: 40px; color: #00b3b3"></i>
+					</a></li>
+					<li><a title="GitHub" target="_blank"
+						href="https://github.com/nawa-acharya"> <i
+							class="	fa fa-github" style="font-size: 40px; color: #00b3b3"></i>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-<!-- Skills Container -->
-    <div class="container-fluid" id="skills">
-        <h1 class="margin text-center" style="color: #0099cc">Skills</h1>
-        <div class="col-md-11 col-md-offset-1">
-            <div class="row skillSet col-xs-12">
-                            <!--Java-->
-                <div class="col-xs-2">
-                    <div class="c100 p95">
-                        <span title="4 years Experience">95%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>
-                    <h3>Java</h3>
-                </div>
-                            <!--JEE-->
-                <div class="col-xs-2">
-                    <div class="c100 p90">
-                        <span title="3 years experience">90%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>JEE/J2EE</h3>
-                </div>
-                            <!--Spring-->
-                <div class="col-xs-2">
-                    <div class="c100 p90">
-                        <span title="3 years experience">90%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>Spring</h3>
-                </div>
-                            <!--Hibernate-->
-                <div class="col-xs-2">
-                    <div class="c100 p90">
-                        <span title="3 years experience">90%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3 style="color:#000c33">Hibernate</h3>
-                </div>
-                            <!--AngularJS-->
-                <div class="col-xs-2">
-                    <div class="c100 p75">
-                        <span title="2 years experience">75%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>AngularJS</h3>
-                </div>
-                <!--RESTful Web API-->
-                 <div class="col-xs-2">
-                    <div class="c100 p90">
-                        <span title="2 years experience">90%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>RESTful</h3>
-                </div>
-            </div>
-            <br/>
-            <br/>
-            <div class="row">
-                 <!--Agile Scrum-->
-                 <div class="col-xs-2">
-                    <div class="c100 p95">
-                        <span title="4 years experience">95%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>Agile-Scrum</h3>
-                </div>
-                <!--html, css -->
-                <div class="col-xs-2">
-                    <div class="c100 p90">
-                        <span title="4 years experience">90%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>HTML5,CSS3</h3>
-                </div>
-                <!--javascript -->
-                <div class="col-xs-2">
-                    <div class="c100 p90">
-                        <span title="4 years experience">90%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>JavaScript</h3>
-                </div>
-                <!--JSP/Servlets -->
-                <div class="col-xs-2">
-                    <div class="c100 p87">
-                        <span title="4 years experience">87%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>JSP/Servlets</h3>
-                </div>
-                 <!--Tomcat -->
-                <div class="col-xs-2">
-                    <div class="c100 p85">
-                        <span title="4 years experience">85%</span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>        
-                    </div>  
-                    <h3>Tomcat</h3>
-                </div>
-            </div>
-            <br/>
-        <blockquote class="blockquote-box innerContent text-justify"><strong><span class="glyphicon glyphicon-download"></span>&nbsp;Download Resume to view all the Skills.</strong></blockquote>
-        </div>    
-    </div>
-        
-<!-- projects Container -->
-    <div class="bg-4 container-fluid" id="projects">
-      <h3 class="margin text-center">Projects</h3>
-        <div class="row col-md-offset-1 innerContent text-justify">
+	<!-- career note -->
+	<div class="container-fluid col-md-offset-1">
+		<div class="col-md-11 text-justify">
+			<h1 class="text-center" id="careerNote">Career Note</h1>
+			<h3 class="text-info">
+				Completed on-campus study and currently taking distance education
+				courses to complete a <strong>Master's Degree in Computer
+					Science</strong>&nbsp;(Available for full-time, W2 employment).
+			</h3>
+		</div>
+	</div>
+
+	<!-- education container -->
+	<div class="container-fluid bg-3 text-center" id="educate">
+		<h1 class="margin" id="educationHeader">
+			<span class="glyphicon glyphicon-education"></span> Education
+		</h1>
+		<div class="col-md-offset-1 col-md-10 text-justify">
+			<div class="innerContent education">
+				<h3 class="heading-underline">
+					<span class="glyphicon glyphicon-check"></span> Masters in Computer
+					Science
+				</h3>
+				<blockquote class="blockquote-box clearfix">
+					<p>
+						<strong>Univerisity: </strong>Maharishi University of Management <span
+							style="color: #888888"> -Fairfield, IA, USA</span>
+					</p>
+					<p>
+						<strong>Graduation Date:</strong>&nbsp;2018
+					</p>
+					<p>
+						<strong>Courses: </strong>
+					</p>
+					<ol type="1">
+						<li>Fundamental Programming Practices</li>
+						<li>Modern Programming Practices</li>
+						<li>Algorithms</li>
+						<li>Web Application Programming</li>
+						<li>Enterprise Applications</li>
+						<li>Web Application Architecture</li>
+					</ol>
+				</blockquote>
+				<h3 class="heading-underline">
+					<span class="glyphicon glyphicon-check"></span> Bachelors in
+					Electronics and Communication Engineering
+				</h3>
+				<blockquote class="blockquote-box clearfix">
+					<p>
+						<strong>Univerisity: </strong>Kantipur Engineering College
+						(Tribhuwan University)<span style="color: #888888">
+							-Dhapakhel, Lalitpur, Nepal</span>
+					</p>
+					<p>
+						<strong>Graduation Date:</strong>&nbsp;2014
+					</p>
+					<p>
+						<strong>Key Courses: </strong>
+					</p>
+					<ol type="1">
+						<li>C Programming</li>
+						<li>Object Oriented Programming</li>
+						<li>Computer Network</li>
+						<li>Analog/Digital Communication</li>
+						<li>Computer Graphics</li>
+						<li>Telecommunication</li>
+						<li>Digital Signal Processing</li>
+						<li>Engineering Mathematics</li>
+					</ol>
+					<p>
+						<strong>Awards: </strong>
+					</p>
+					<ol type="i">
+						<li>The Laurel of the College 2013</li>
+						<li>Third Postion in Tribhuvan Univeristy</li>
+						<!--                             <li>First Position in Kantipur Engineering College</li>-->
+						<li>Best Project awarded by Nepal Telecom Authority</li>
+					</ol>
+				</blockquote>
+				<h3 class="heading-underline">
+					<span class="glyphicon glyphicon-check"></span> School
+				</h3>
+				<blockquote class="blockquote-box clearfix">
+					<p>
+						<strong>School: </strong>Balodaya Higher Secondary School<span
+							style="color: #888888"> -Pokhara, Nepal</span>
+					</p>
+					<p>
+						<strong>Awards: </strong>
+					</p>
+					<p>
+						<strong>Graduation Date:</strong>&nbsp;2008
+					</p>
+					<ol type="1">
+						<li>Outstanding Performance Award 2008</li>
+					</ol>
+				</blockquote>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Skills Container -->
+	<div class="container-fluid" id="skills">
+		<h1 class="margin text-center" style="color: #0099cc">Skills</h1>
+		<div class="col-md-11 col-md-offset-1">
+			<div class="row skillSet col-xs-12">
+				<!--Java-->
+				<div class="col-xs-2">
+					<div class="c100 p95">
+						<span title="4 years Experience">95%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>Java</h3>
+				</div>
+				<!--JEE-->
+				<div class="col-xs-2">
+					<div class="c100 p90">
+						<span title="3 years experience">90%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>JEE/J2EE</h3>
+				</div>
+				<!--Spring-->
+				<div class="col-xs-2">
+					<div class="c100 p90">
+						<span title="3 years experience">90%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>Spring</h3>
+				</div>
+				<!--Hibernate-->
+				<div class="col-xs-2">
+					<div class="c100 p90">
+						<span title="3 years experience">90%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3 style="color: #000c33">Hibernate</h3>
+				</div>
+				<!--AngularJS-->
+				<div class="col-xs-2">
+					<div class="c100 p75">
+						<span title="2 years experience">75%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>AngularJS</h3>
+				</div>
+				<!--RESTful Web API-->
+				<div class="col-xs-2">
+					<div class="c100 p90">
+						<span title="2 years experience">90%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>RESTful</h3>
+				</div>
+			</div>
+			<br /> <br />
+			<div class="row">
+				<!--Agile Scrum-->
+				<div class="col-xs-2">
+					<div class="c100 p95">
+						<span title="4 years experience">95%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>Agile-SCRUM</h3>
+				</div>
+				<!--html, css -->
+				<div class="col-xs-2">
+					<div class="c100 p90">
+						<span title="4 years experience">90%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>HTML5,CSS3</h3>
+				</div>
+				<!--javascript -->
+				<div class="col-xs-2">
+					<div class="c100 p90">
+						<span title="4 years experience">90%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>JavaScript</h3>
+				</div>
+				<!--JSP/Servlets -->
+				<div class="col-xs-2">
+					<div class="c100 p87">
+						<span title="4 years experience">87%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>JSP/Servlets</h3>
+				</div>
+				<!--Tomcat -->
+				<div class="col-xs-2">
+					<div class="c100 p85">
+						<span title="4 years experience">85%</span>
+						<div class="slice">
+							<div class="bar"></div>
+							<div class="fill"></div>
+						</div>
+					</div>
+					<h3>Tomcat</h3>
+				</div>
+			</div>
+			<br />
+			<blockquote class="blockquote-box innerContent text-justify">
+				<strong><span class="glyphicon glyphicon-download"></span>&nbsp;Download
+					Resume to view all the Skills.</strong>
+			</blockquote>
+		</div>
+	</div>
+
+	<!-- projects Container -->
+	<div class="bg-4 container-fluid" id="projects">
+		<h3 class="margin text-center">Projects</h3>
+		<div class="row col-md-offset-1 innerContent text-justify">
 			<!-- Pathshala Nepal -->
-            <div class="col-md-5 bg-project">
-                <h3><span class="glyphicon glyphicon-folder-open"></span>&nbsp;PathshalaNepal</h3>
-                <blockquote class="blockquote-box">
-                    <p class="text-primary">An enterprise application addressing entire school management system. </p>
-                    <footer>Bussiness Domain: Education</footer>
-                    <br/>
-					<hr/>
-                    <p><strong>Responsibilities: </strong></p>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li fa fa-check-square"></span> Implement dynamic functionality to web page using JQuery and implemented Asynchronous means of retrieval of data using AJAX</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Participate in the daily Agile SCRUM meetings</li>
-                        <li><span class="fa-li fa fa-check-square"></span> Implement RESTful Web Services using AngularJS in the front-end</li>
-                        <li><span class="fa-li fa fa-check-square"></span>WConsumed Restful web services using Jersey API on middle tier</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Use Postman to test JSON objects</li>
-						<li><span class="fa-li fa fa-check-square"></span>Used Git for source control repository</li>
-						<li><span class="fa-li fa fa-check-square"></span>Provide back-end design for the accounting module of school management system using Hibernate for ORM</li>
-						<li><span class="fa-li fa fa-check-square"></span>Develop DAO (Data Access Object) classes to access data from database</li>
-						<li><span class="fa-li fa fa-check-square"></span>Create transcations to perform CRUD operations</li>
-						<li><span class="fa-li fa fa-check-square"></span>Use Eclipse IDE for application development</li>
-						<li><span class="fa-li fa fa-check-square"></span>Develop unit cases using JUnit and Mockito framework</li>
-						<li><span class="fa-li fa fa-check-square"></span> Write queries and store procedure for MySQL data base </li>
-						<li><span class="fa-li fa fa-check-square"></span> Use Hibernate optimization to optimize response time </li>
-                    </ul>
-					<hr/>
-                    <p><strong><span class="glyphicon glyphicon-wrench"></span>&nbsp;Tools Used:</strong></p>
-                    <ul class="fa-ul list-inline">
-                        <li><code>HTML5</code></li>
-                        <li><code>CSS3</code></li>
-                        <li><code>AngularJS</code></li>
-                        <li><code>Java 8</code></li>
-                        <li><code>Spring</code></li>
-                        <li><code>Hibernate</code></li>
-                        <li><code>MySQL</code></li>
+			<div class="col-md-5 bg-project">
+				<h3>
+					<span class="glyphicon glyphicon-folder-open"></span>&nbsp;PathshalaNepal
+				</h3>
+				<blockquote class="blockquote-box">
+					<p class="text-primary">An enterprise application addressing
+						entire school management system.</p>
+					<footer>Bussiness Domain: Education</footer>
+					<br />
+					<hr />
+					<p>
+						<strong>Responsibilities: </strong>
+					</p>
+					<ul class="fa-ul">
+						<li><span class="fa-li fa fa-check-square"></span> Implement
+							dynamic functionality to web page using JQuery and implemented
+							Asynchronous means of retrieval of data using AJAX</li>
+						<li><span class="fa-li fa fa-check-square"></span>Participate
+							in the daily Agile SCRUM meetings</li>
+						<li><span class="fa-li fa fa-check-square"></span> Implement
+							RESTful Web Services using AngularJS in the front-end</li>
+						<li><span class="fa-li fa fa-check-square"></span>WConsumed
+							Restful web services using Jersey API on middle tier</li>
+						<li><span class="fa-li fa fa-check-square"></span>Use Postman
+							to test JSON objects</li>
+						<li><span class="fa-li fa fa-check-square"></span>Used Git
+							for source control repository</li>
+						<li><span class="fa-li fa fa-check-square"></span>Provide
+							back-end design for the accounting module of school management
+							system using Hibernate for ORM</li>
+						<li><span class="fa-li fa fa-check-square"></span>Develop DAO
+							(Data Access Object) classes to access data from database</li>
+						<li><span class="fa-li fa fa-check-square"></span>Create
+							transcations to perform CRUD operations</li>
+						<li><span class="fa-li fa fa-check-square"></span>Use Eclipse
+							IDE for application development</li>
+						<li><span class="fa-li fa fa-check-square"></span>Develop
+							unit cases using JUnit and Mockito framework</li>
+						<li><span class="fa-li fa fa-check-square"></span> Write
+							queries and store procedure for MySQL data base</li>
+						<li><span class="fa-li fa fa-check-square"></span> Use
+							Hibernate optimization to optimize response time</li>
+					</ul>
+					<hr />
+					<p>
+						<strong><span class="glyphicon glyphicon-wrench"></span>&nbsp;Tools
+							Used:</strong>
+					</p>
+					<ul class="fa-ul list-inline">
+						<li><code>HTML5</code></li>
+						<li><code>CSS3</code></li>
+						<li><code>AngularJS</code></li>
+						<li><code>Java 8</code></li>
+						<li><code>Spring</code></li>
+						<li><code>Hibernate</code></li>
+						<li><code>MySQL</code></li>
 						<li><code>Tomcat</code></li>
 						<li><code>Maven</code></li>
 						<li><code>Bower</code></li>
 						<li><code>Grunt</code></li>
-                    </ul>
-                </blockquote>
-            </div>
-            <!--Tourdenepal project-->
-            <div class="col-md-offset-1 col-md-5 bg-project">
-                <h3><span class="glyphicon glyphicon-folder-open"></span>&nbsp;TourDeNepal</h3>
-                <blockquote class="blockquote-box">
-                    <p class="text-primary">A web based application for managing tours and travels providing detail overviews of places that can be explored as a tourist. </p>
-                    <footer>Bussiness Domain: Tourism</footer>
-                    <br/>
-					<hr/>
-                    <p><strong>Responsibilities: </strong></p>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li fa fa-check-square"></span>Worked on Google Map API to provide location information.</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Prepared JSON objects.</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Developed a SPA using AngularJS; designed and developed controller and worked on routing.</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Worked with Spring Security and Spring Oauth2 to provide authentication and authorization.</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Worked with Spring Boot for persistence layer.</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Perform unit testing using JUnit and Mockito framework for service layer</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Use Spring boot for ORM and integrate with MySQL database</li>
-						<li><span class="fa-li fa fa-check-square"></span> Implement RESTful web services using AngularJS on front tier, Spring framework on middle tier and integrate Jersery API</li>
-						<li><span class="fa-li fa fa-check-square"></span>Configure Maven project for enterprise applications</li>
-						<li><span class="fa-li fa fa-check-square"></span>Use Design patterns for optimum functionality</li>
-						<li><span class="fa-li fa fa-check-square"></span> Integrate jQuery UI to provide visual animations for web development</li>
-						<li><span class="fa-li fa fa-check-square"></span>Use JBoss for server </li>
-						<li><span class="fa-li fa fa-check-square"></span>Implemented the log functionality by using log4j API</li>
-						<li><span class="fa-li fa fa-check-square"></span>Follow Agile Development model by directly interacting with business users and product teams, with very quick turn-around time</li>
-						<li><span class="fa-li fa fa-check-square"></span>Module integrating and bug fixing</li>
-                    </ul>
-					<hr/>
-                    <p><strong><span class="glyphicon glyphicon-wrench"></span>&nbsp;Tools Used:</strong></p>
-                    <ul class="fa-ul list-inline">
-                        <li><code>HTML5</code></li>
-                        <li><code>CSS3</code></li>
-                        <li><code>AngularJS</code></li>
-                        <li><code>Java 8</code></li>
-                        <li><code>Spring</code></li>
-                        <li><code>Hibernate</code></li>
-                        <li><code>MySQL</code></li>
-                        <li><code>Jenkins</code></li>
+					</ul>
+				</blockquote>
+			</div>
+			<!--Tourdenepal project-->
+			<div class="col-md-offset-1 col-md-5 bg-project">
+				<h3>
+					<span class="glyphicon glyphicon-folder-open"></span>&nbsp;TourDeNepal
+				</h3>
+				<blockquote class="blockquote-box">
+					<p class="text-primary">A web based application for managing
+						tours and travels providing detail overviews of places that can be
+						explored as a tourist.</p>
+					<footer>Bussiness Domain: Tourism</footer>
+					<br />
+					<hr />
+					<p>
+						<strong>Responsibilities: </strong>
+					</p>
+					<ul class="fa-ul">
+						<li><span class="fa-li fa fa-check-square"></span>Worked on
+							Google Map API to provide location information.</li>
+						<li><span class="fa-li fa fa-check-square"></span>Prepared
+							JSON objects.</li>
+						<li><span class="fa-li fa fa-check-square"></span>Developed a
+							SPA using AngularJS; designed and developed controller and worked
+							on routing.</li>
+						<li><span class="fa-li fa fa-check-square"></span>Worked with
+							Spring Security and Spring Oauth2 to provide authentication and
+							authorization.</li>
+						<li><span class="fa-li fa fa-check-square"></span>Worked with
+							Spring Boot.</li>
+						<li><span class="fa-li fa fa-check-square"></span>Perform
+							unit testing using JUnit and Mockito framework for service layer</li>
+						<li><span class="fa-li fa fa-check-square"></span>Use Spring
+							boot for ORM and integrate with MySQL database</li>
+						<li><span class="fa-li fa fa-check-square"></span> Implement
+							RESTful web services using AngularJS on front tier, Spring
+							framework on middle tier and integrate Jersery API</li>
+						<li><span class="fa-li fa fa-check-square"></span>Configure
+							Maven project for enterprise applications</li>
+						<li><span class="fa-li fa fa-check-square"></span>Use Design
+							patterns for optimum functionality</li>
+						<li><span class="fa-li fa fa-check-square"></span> Integrate
+							jQuery UI to provide visual animations for web development</li>
+						<li><span class="fa-li fa fa-check-square"></span>Use JBoss
+							for server</li>
+						<li><span class="fa-li fa fa-check-square"></span>Implemented
+							the log functionality by using log4j API</li>
+						<li><span class="fa-li fa fa-check-square"></span>Follow
+							Agile Development model by directly interacting with business
+							users and product teams, with very quick turn-around time</li>
+						<li><span class="fa-li fa fa-check-square"></span>Module
+							integrating and bug fixing</li>
+					</ul>
+					<hr />
+					<p>
+						<strong><span class="glyphicon glyphicon-wrench"></span>&nbsp;Tools
+							Used:</strong>
+					</p>
+					<ul class="fa-ul list-inline">
+						<li><code>HTML5</code></li>
+						<li><code>CSS3</code></li>
+						<li><code>AngularJS</code></li>
+						<li><code>Java 8</code></li>
+						<li><code>Spring</code></li>
+						<li><code>Hibernate</code></li>
+						<li><code>MySQL</code></li>
+						<li><code>Jenkins</code></li>
 						<li><code>Tomcat</code></li>
-                    </ul>
-                </blockquote>
-            </div>
-        </div>
-		<hr/>
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+		<hr />
 		<div class="row col-md-offset-1 innerContent text-justify">
 			<!--Reservation System -->
-            <div class="col-md-5 bg-project">
-                <h3><span class="glyphicon glyphicon-folder-open"></span>&nbsp;Reservation System</h3>
-                <blockquote class="blockquote-box">
-                    <p class="text-primary">An enterprise application addressing entire school management system. </p>
-                    <footer>Bussiness Domain: Hotel</footer>
-                    <br/>
-					<hr/>
-                    <p><strong>Responsibilities: </strong></p>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li fa fa-check-square"></span>Involved in daily stand up and sprint planning sessions as part of AGILE Scrum Methodology</li>
-                        <li><span class="fa-li fa fa-check-square"></span> Front Controller design and coding </li>
-                        <li><span class="fa-li fa fa-check-square"></span>Create JSON objects to implement RESTful web services</li>
-                        <li><span class="fa-li fa fa-check-square"></span> Use AJAX to communicate JSON objects to server side</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Design middle tier using Spring framework</li>
-						<li><span class="fa-li fa fa-check-square"></span> Implement authorization and authentication using Spring Security</li>
-						<li><span class="fa-li fa fa-check-square"></span>Integrate Spring with Hibernate framework</li>
-						<li><span class="fa-li fa fa-check-square"></span>MySQL database design</li>
-						<li><span class="fa-li fa fa-check-square"></span>Perform unit testing on service layer using Mockito framework</li>
-						<li><span class="fa-li fa fa-check-square"></span>Developed the service layer DAO for interaction with MySQL and used Hibernate for the ORM</li>
-						<li><span class="fa-li fa fa-check-square"></span>Used Log4J for logging and tracing the messages</li>
-						<li><span class="fa-li fa fa-check-square"></span> Used Git for version control</li>
-						<li><span class="fa-li fa fa-check-square"></span>Develop Maven project and Eclipse IDE for the development</li>
-						<li><span class="fa-li fa fa-check-square"></span>Perform Continuous Integration using Jenkins</li>
-                    </ul>
-					<hr/>
-                    <p><strong><span class="glyphicon glyphicon-wrench"></span>&nbsp;Tools Used:</strong></p>
-                    <ul class="fa-ul list-inline">
-                        <li><code>HTML5</code></li>
-                        <li><code>CSS3</code></li>
-                        <li><code>AngularJS</code></li>
-                        <li><code>Java 8</code></li>
-                        <li><code>Spring</code></li>
-                        <li><code>Hibernate</code></li>
-                        <li><code>MySQL</code></li>
+			<div class="col-md-5 bg-project">
+				<h3>
+					<span class="glyphicon glyphicon-folder-open"></span>&nbsp;Reservation
+					System
+				</h3>
+				<blockquote class="blockquote-box">
+					<p class="text-primary">An enterprise application addressing
+						school management system. Provides student information, financial
+						management, classroom management, faculty management, events
+						calendar, library management, student health information and
+						admission management.</p>
+					<footer>Bussiness Domain: Hotel</footer>
+					<br />
+					<hr />
+					<p>
+						<strong>Responsibilities: </strong>
+					</p>
+					<ul class="fa-ul">
+						<li><span class="fa-li fa fa-check-square"></span>Involved in
+							daily stand up and sprint planning sessions as part of AGILE
+							Scrum Methodology</li>
+						<li><span class="fa-li fa fa-check-square"></span> Front
+							Controller design and coding</li>
+						<li><span class="fa-li fa fa-check-square"></span>Create JSON
+							objects to implement RESTful web services</li>
+						<li><span class="fa-li fa fa-check-square"></span> Use AJAX
+							to communicate JSON objects to server side</li>
+						<li><span class="fa-li fa fa-check-square"></span>Design
+							middle tier using Spring framework</li>
+						<li><span class="fa-li fa fa-check-square"></span> Implement
+							authorization and authentication using Spring Security</li>
+						<li><span class="fa-li fa fa-check-square"></span>Integrate
+							Spring with Hibernate framework</li>
+						<li><span class="fa-li fa fa-check-square"></span>MySQL
+							database design</li>
+						<li><span class="fa-li fa fa-check-square"></span>Perform
+							unit testing on service layer using Mockito framework</li>
+						<li><span class="fa-li fa fa-check-square"></span>Developed
+							the service layer DAO for interaction with MySQL and used
+							Hibernate for the ORM</li>
+						<li><span class="fa-li fa fa-check-square"></span>Used Log4J
+							for logging and tracing the messages</li>
+						<li><span class="fa-li fa fa-check-square"></span> Used Git
+							for version control</li>
+						<li><span class="fa-li fa fa-check-square"></span>Develop
+							Maven project and Eclipse IDE for the development</li>
+						<li><span class="fa-li fa fa-check-square"></span>Perform
+							Continuous Integration using Jenkins</li>
+					</ul>
+					<hr />
+					<p>
+						<strong><span class="glyphicon glyphicon-wrench"></span>&nbsp;Tools
+							Used:</strong>
+					</p>
+					<ul class="fa-ul list-inline">
+						<li><code>HTML5</code></li>
+						<li><code>CSS3</code></li>
+						<li><code>AngularJS</code></li>
+						<li><code>Java 8</code></li>
+						<li><code>Spring</code></li>
+						<li><code>Hibernate</code></li>
+						<li><code>MySQL</code></li>
 						<li><code>Tomcat</code></li>
-                    </ul>
-                </blockquote>
-            </div>
-            <!--Routine Management and Seat planning-->
-            <div class="col-md-offset-1 col-md-5 bg-project">
-                <h3><span class="glyphicon glyphicon-folder-open"></span>&nbsp;Routine Management and Seat Planning</h3>
-                <blockquote class="blockquote-box">
-                    <p class="text-primary">An enterprise application to make academic routine/schedule for the classes. Routine for every semesters and seat planning for examination for all the classes. </p>
-                    <footer>Bussiness Domain: Education</footer>
-                    <br/>
-					<hr/>
-                    <p><strong>Responsibilities: </strong></p>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li fa fa-check-square"></span>Full Stack development.</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Ensured dynamic UI component generation from database data</li>
-                        <li><span class="fa-li fa fa-check-square"></span>.</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Worked with Spring Security to provide high authentication and authority</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Worked with Hibernate for persistence layer</li>
-                        <li><span class="fa-li fa fa-check-square"></span>Implemented TDD with JUnit </li>
-                        <li><span class="fa-li fa fa-check-square"></span>Database (MySQL) design</li>
-						<li><span class="fa-li fa fa-check-square"></span>Used Git for version control</li>
-						<li><span class="fa-li fa fa-check-square"></span>Integrate with JBoss server</li>
-						<li><span class="fa-li fa fa-check-square"></span>Implement RESTful web service using Jersey API on middle tier</li>
-						<li><span class="fa-li fa fa-check-square"></span>Use RabbitMQ for SMTP emails</li>
-						<li><span class="fa-li fa fa-check-square"></span>Provide documentation</li>
-						<li><span class="fa-li fa fa-check-square"></span>Create transcations to perform CRUD operations</li>				
-                    </ul>
-					<hr/>
-                    <p><strong><span class="glyphicon glyphicon-wrench"></span>&nbsp;Tools Used:</strong></p>
-                    <ul class="fa-ul list-inline">
-                        <li><code>HTML5</code></li>
-                        <li><code>CSS3</code></li>
-                        <li><code>Bootstrap</code></li>
-                        <li><code>Java 8</code></li>
-                        <li><code>Spring</code></li>
-                        <li><code>Hibernate</code></li>
-                        <li><code>MySQL</code></li>
-                        <li><code>Eclipse</code></li>
+					</ul>
+				</blockquote>
+			</div>
+			<!--Routine Management and Seat planning-->
+			<div class="col-md-offset-1 col-md-5 bg-project">
+				<h3>
+					<span class="glyphicon glyphicon-folder-open"></span>&nbsp;Routine
+					Management and Seat Planning
+				</h3>
+				<blockquote class="blockquote-box">
+					<p class="text-primary">An enterprise application to make
+						academic routine/schedule for the classes. Routine for every
+						semesters and seat planning for examination for all the classes.</p>
+					<footer>Bussiness Domain: Education</footer>
+					<br />
+					<hr />
+					<p>
+						<strong>Responsibilities: </strong>
+					</p>
+					<ul class="fa-ul">
+						<li><span class="fa-li fa fa-check-square"></span>Full Stack
+							development.</li>
+						<li><span class="fa-li fa fa-check-square"></span>Ensured
+							dynamic UI component generation from database data</li>
+						<li><span class="fa-li fa fa-check-square"></span>Worked with
+							Spring Security to provide high authentication and authority</li>
+						<li><span class="fa-li fa fa-check-square"></span>Worked with
+							Hibernate for persistence layer</li>
+						<li><span class="fa-li fa fa-check-square"></span>Implemented
+							TDD with JUnit</li>
+						<li><span class="fa-li fa fa-check-square"></span>Database
+							(MySQL) design</li>
+						<li><span class="fa-li fa fa-check-square"></span>Used Git
+							for version control</li>
+						<li><span class="fa-li fa fa-check-square"></span>Integrate
+							with JBoss server</li>
+						<li><span class="fa-li fa fa-check-square"></span>Implement
+							RESTful web service using Jersey API on middle tier</li>
+						<li><span class="fa-li fa fa-check-square"></span>Use
+							RabbitMQ for SMTP emails</li>
+						<li><span class="fa-li fa fa-check-square"></span>Provide
+							documentation</li>
+						<li><span class="fa-li fa fa-check-square"></span>Create
+							transcations to perform CRUD operations</li>
+					</ul>
+					<hr />
+					<p>
+						<strong><span class="glyphicon glyphicon-wrench"></span>&nbsp;Tools
+							Used:</strong>
+					</p>
+					<ul class="fa-ul list-inline">
+						<li><code>HTML5</code></li>
+						<li><code>CSS3</code></li>
+						<li><code>Bootstrap</code></li>
+						<li><code>Java 8</code></li>
+						<li><code>Spring</code></li>
+						<li><code>Hibernate</code></li>
+						<li><code>MySQL</code></li>
+						<li><code>Eclipse</code></li>
 						<li><code>Maven</code></li>
 						<li><code>JBoss</code></li>
 						<li><code>Jersey</code></li>
 						<li><code>RESTful web service</code></li>
 						<li><code>AngularJS</code></li>
-                    </ul>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-<!--	academic projects 
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	<!--	academic projects 
 	<div class="container col-md-11 col-md-offset-1">
 		
-	</div>-->	
-<!-- location information -->
-	<div class="container-fluid bg-6" id= "location">
+	</div>-->
+	<!-- location information -->
+	<div class="container-fluid bg-6" id="location">
 		<div class="innerContent" id="contact">
 			<!-- phone number -->
 			<div class="col-md-offset-1 col-md-10">
-				<p><i class="fa fa-phone text-primary" style="font-size: 50px" aria-hidden="true"></i></p>
+				<p>
+					<i class="fa fa-phone text-primary" style="font-size: 50px"
+						aria-hidden="true"></i>
+				</p>
 				<p style="font-size: 25px">+1&#40;641&#41;225&#45;5070</p>
-				<hr/>
+				<hr />
 			</div>
 
 			<!--email -->
 			<div class="col-md-offset-1 col-md-10">
-				<p><i class="fa fa-envelope text-primary" style="font-size: 50px" aria-hidden="true"></i></p>
+				<p>
+					<i class="fa fa-envelope text-primary" style="font-size: 50px"
+						aria-hidden="true"></i>
+				</p>
 				<p style="font-size: 25px">nawa&#46;acharya04&#64;gmail&#46;com</p>
-				<hr/>
+				<hr />
 			</div>
 			<!-- location -->
 			<div class="col-md-offset-1 col-md-10">
-				<div id="map" style="width:100%; height:250px"></div>
+				<div id="map" style="width: 100%; height: 250px"></div>
 			</div>
 		</div>
 	</div>
-		
-        
-<!-- message -->
-		<div id="contactme">
-			<div id="messageSend">
-				<i class="fa fa-envelope-o"></i>
-			</div>
-			<div id="contactForm">
-				<div class="test-justify">
-				   <form class="form-inline col-xs-12" id="emailForm">
-						<div class="form-group">
-							<label class="sr-only" for="name">Name: </label>
-							<input type="text" class="form-control" id="name" placeholder="Your Name" size="30" required>
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="email">&emsp;Email:</label>
-							<input type="email" class="form-control" id="email" placeholder="Your Email" size="30">
-					   </div>
-					   <br/>
-					   <br/>
-					   <div class="form-group">
-							<label class="sr-only" for="message">Comment:</label>
-							<textarea class="form-control" rows="8" cols="70" id="message" placeholder="Your Message to me" width="50px" required></textarea> 
-					   </div>
-					   <br/>
-					   <br/>
-				  <!-- <a type="button" class="btn btn-default" id="sendMailToMe">Send Me Your Message</a>-->
-				<input type="submit" class="btn btn-default" id="sendMailToMe" value="Send Email" />
+
+
+	<!-- message -->
+	<div id="contactme">
+		<div id="messageSend">
+			<i class="fa fa-envelope-o"></i>
+		</div>
+		<div id="contactForm">
+			<div class="test-justify">
+				<form class="form-inline col-xs-12" id="emailForm">
+					<div class="form-group">
+						<label class="sr-only" for="name">Name: </label> <input
+							type="text" class="form-control" id="name"
+							placeholder="Your Name" size="30" required>
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="email">&emsp;Email:</label> <input
+							type="email" class="form-control" id="email"
+							placeholder="Your Email" size="30">
+					</div>
+					<br /> <br />
+					<div class="form-group">
+						<label class="sr-only" for="message">Comment:</label>
+						<textarea class="form-control" rows="8" cols="70" id="message"
+							placeholder="Your Message to me" width="50px" required></textarea>
+					</div>
+					<br /> <br />
+					<!-- <a type="button" class="btn btn-default" id="sendMailToMe">Send Me Your Message</a>-->
+					<input type="submit" class="btn btn-default" id="sendMailToMe"
+						value="Send Email" />
 				</form>
 			</div>
-			</div>
-        </div>
-        
-<!-- Footer -->
-    <footer class="container-fluid bg-2 text-center" id="footer">
-        &copy;Nawa Raj Acharya, 2016
-    </footer>
-        <!--scripts here-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="script/myscript.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container-fluid bg-2 text-center" id="footer">
+		&copy;Nawa Raj Acharya, 2016 </footer>
+	<!--scripts here-->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="script/myscript.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </body>
 </html>
